@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+Devanagari:wght@100..900&family=Poppins:ital,wght@1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Noto Sans Devanagari", sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.app-container{
+    background-color: rgba(34,34,34,0.8);
+    padding: 20px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+    opacity: 0.8;
+}
+.app-header h1{
+    font-size: 2.5rem;
+    color: #ff8c00;
+
+}
+.app-header p{
+    font-size: 1rem;
+    color: #aaa;
+    margin-bottom: 20px;
+}
+.search-container{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+input[type="text"]{
+    flex: 1;
+    padding:10px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #444;
+    outline: none;
+}
+input[type="text"]::placeholder{
+    color: #ccc;
+}
+button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: #ff8c00;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover{
+    background-color: #cc6b00;
+}
+.current-weather{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #333;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    margin-top: 20px;
+    color: #fff;
+}
+.current-weather .icon img{
+    width: 80px;
+    /* height: 100px; */
+}
+.info h2{
+    font-size: 2rem;
+    color: #ff8c00;
+}
+.info p{
+    font-size: 1rem;
+    margin: 5px 0;
+}
+.forecast{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    overflow-x: auto;
+    gap: 15px;
+    /* padding-bottom: 10px; */
+}
+.day{
+    background: #333;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+    /* color: #fff; */
+}
+.weekday{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ff8c00;
+}
+.day .icon img{
+    width: 50px;
+    /* height: 60px; */
+}
+.temp{
+    /* margin-top: 10px; */
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+}
+body.clear {
+    background-image: url('https://images.pexels.com/photos/459451/pexels-photo-459451.jpeg?cs=srgb&dl=pexels-pixabay-459451.jpg&fm=jpg');
+}
+
+body.clouds {
+    background-image: url('https://images.pexels.com/photos/459451/pexels-photo-459451.jpeg?cs=srgb&dl=pexels-pixabay-459451.jpg&fm=jpg');
+}
+
+body.rain {
+    background-image: url('https://images.pexels.com/photos/459451/pexels-photo-459451.jpeg?cs=srgb&dl=pexels-pixabay-459451.jpg&fm=jpg');
+}
+
+body.snow {
+    background-image: url('https://images.pexels.com/photos/459451/pexels-photo-459451.jpeg?cs=srgb&dl=pexels-pixabay-459451.jpg&fm=jpg');
+}
+
+body.default {
+    background-image: url('https://images.pexels.com/photos/459451/pexels-photo-459451.jpeg?cs=srgb&dl=pexels-pixabay-459451.jpg&fm=jpg');
+}
+
+body {
+    background-image: url('https://media.istockphoto.com/id/926497236/photo/tropical-sea-in-summer.jpg?s=612x612&w=0&k=20&c=SgT--E-a5_UF4GPVnpC6r1IDtThuDiUHmtTbhHg5zJA=');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
